@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Past Pups</title>
+
+
+<style>
+	@charset "UTF-8";
+/* Body */
+
+body {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    height: 0px;
+}
+.column p a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+/* Container */
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+}
+/* Header */
+header {
+    width: 100%;
+    height: 5%;
+    background-color: #656463;
+    border-bottom: 1px solid #353635;
+}
+.logo {
+	color: #fff;
+	font-weight: bold;
+	text-align: undefined;
+	width: 20%;
+	float: left;
+	margin-top: 15px;
+	margin-left: 25px;
+	letter-spacing: 4px;
+}
+/* About Section */
+.text_column {
+    width: 90%;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 25px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #A3A3A3;
+    font-family: Interstate;
+}
+.gallery {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: #FFFFFF;
+	/* [disabled]min-width: 400px;
+*/
+	padding-bottom: 35px;
+	padding-top: 0px;
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+.thumbnail {
+    width: 23%;
+    text-align: center;
+    float: left;
+    margin-top: 35px;
+    background-color: #F8F8F8;
+    padding-bottom: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 3px;
+    padding-top: 20px;
+    border-bottom: 4px solid #6DC7D0;
+    height: 340px;
+}
+.gallery .thumbnail h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #52BAD5;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Trajan Pro 3";
+}
+.gallery .thumbnail p {
+    margin: 0;
+    color: #B3B3B3;
+    text-align: left;
+    padding-left: 20px;
+    font-family: Tahoma;
+}
+/* More info */
+.intro {
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+}
+.column {
+	width: 50%;
+	text-align: center;
+	padding-top: 30px;
+	float: left;
+}
+.intro .column h3 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Trajan Pro Bold";
+}
+.intro .column p {
+	color: #FFFFFF;
+}
+.cards {
+    width: 39%;
+    max-width: 450px;
+    max-height: 200px;
+    opacity: 0.8;
+    border: thick solid #82BBE6;
+    height: auto;
+}
+.intro .column p {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    line-height: 25px;
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 80%;
+    margin-top: 4%;
+    font-family: Tahoma;
+}
+.button {
+	width: 200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+}
+.button:hover {
+	background-color: #6DC7D0;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #717070;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    border-top-width: 2px;
+    font-family: "Trajan Pro Bold";
+}
+footer {
+	background-color: #B3B3B3;
+	padding-top: 60px;
+	padding-bottom: 60PX;
+}
+.intro {
+    display: inline-block;
+    background-color: #82BBE6;
+}
+.profile {
+    width: 50%;
+}
+.gallery .thumbnail .tag {
+    color: #5D5E5D;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Trajan Pro Bold";
+}
+h4.logo {
+    font-family: "Trajan Pro Bold";
+    font-weight: bold;
+    height: auto;
+}
+a {
+    color: #82BBE6;
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.text_column {
+	width: 100%;
+	text-align: justify;
+	padding: 0;
+}
+.intro .column p {
+	width: 80%;
+	margin-left: 0px;
+}
+.text_column {
+	padding-left: 20px;
+}
+.thumbnail {
+	width: 100%;
+}
+.column {
+	width: 100%;
+	margin-top: 0px;
+}
+.hero_header {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+}
+
+/* Small Tablets */
+@media (min-width: 321px)and (max-width: 767px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.text_column {
+	width: 100%;
+	text-align: left;
+	padding: 0;
+}
+.thumbnail {
+	width: 100%;
+}
+.column {
+	width: 100%;
+	margin-top: 0px;
+}
+.thumbnail {
+	width: 100%;
+}
+.text_column {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 90%;
+}
+.column {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.profile {
+	width: 100%;
+}
+.intro .column p {
+	width: 90%;
+	text-align: center;
+	padding-left: 0px;
+}
+}
+
+/* Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+.text_column {
+	width: 100%;
+}
+.thumbnail {
+	width: 48%;
+}
+.text_column {
+	width: 90%;
+	margin: 0;
+	padding: 20px;
+}
+.intro .column p {
+	width: 80%;
+}
+	div.copyright{
+	font-family: arial,serif;
+    font-weight: bold;
+}
+
+	/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+	/* New Navbar Code*/
+}
+
+	</style>
+<link href="../css/pastpups.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Header -->
+  <header> <a href="">
+    <h4 class="logo">ROBINWELL FRENCHIES</h4>
+    </a>
+    <nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+		<li><div class="dropdown">
+      		Litters
+    		<div class="dropdown-content">
+      		 <a href="pastpups.html">Past Pups</a>
+      		 <a href="#">Current Pups</a>
+    		</div>
+  		</div></li>
+			<li><a href="studs_and_females.html">Our Dogs</a></li>
+			<li><div class="dropdown">
+      		More
+    		<div class="dropdown-content">
+      		 <a href="contact.html">Contact Us</a>
+      		 <a href="faq.html">FAQ</a>
+			 <a href="customer_reviews.html">Customer Reviews</a>
+    		</div>
+  		</div></li>
+		</ul>
+	</nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="intro">
+    <div class="column">
+      <h3>THE NEW PUPS&nbsp; &nbsp;</h3>
+      <img src="../images/newpup3.jpg" alt="" class="profile"> </div>
+    <div class="column">
+      <p>&nbsp; &nbsp; </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+    </div>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="../images/newpup1.jpeg" alt="" width="1440" class="cards"/></a>
+      <h4>Dog 1</h4>
+      <p class="tag">&nbsp;</p>
+      <p class="text_column">Description</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="../images/newpup2.jpeg" alt="" width="4032" class="cards"/></a>
+      <h4>Dog 2</h4>
+      <p class="tag">&nbsp;</p>
+      <p class="text_column">Description</p>
+    </div>
+</div>
+  <div class="gallery"> </div>
+  <!-- Footer Section -->
+  <!-- Copyrights Section -->
+  <div class="copyright"> <strong>&nbsp;</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>

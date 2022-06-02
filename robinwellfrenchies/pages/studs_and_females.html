@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Dogs</title>
+	
+<style>
+	@charset "UTF-8";
+/* Body */
+
+body {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    height: 0px;
+}
+.column p a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+/* Container */
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+}
+/* Header */
+header {
+    width: 100%;
+    height: 5%;
+    background-color: #656463;
+    border-bottom: 1px solid #353635;
+}
+.logo {
+	color: #fff;
+	font-weight: bold;
+	text-align: undefined;
+	width: 20%;
+	float: left;
+	margin-top: 15px;
+	margin-left: 25px;
+	letter-spacing: 4px;
+}
+/* About Section */
+.text_column {
+    width: 90%;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 25px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #A3A3A3;
+    font-family: Interstate;
+}
+.gallery {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: #FFFFFF;
+	/* [disabled]min-width: 400px;
+*/
+	padding-bottom: 35px;
+	padding-top: 0px;
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+.thumbnail {
+    width: 23%;
+    text-align: center;
+    float: left;
+    margin-top: 35px;
+    background-color: #F8F8F8;
+    padding-bottom: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 3px;
+    padding-top: 20px;
+    border-bottom: 4px solid #6DC7D0;
+    height: 340px;
+}
+.gallery .thumbnail h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #52BAD5;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Trajan Pro 3";
+}
+.gallery .thumbnail p {
+    margin: 0;
+    color: #B3B3B3;
+    text-align: left;
+    padding-left: 20px;
+    font-family: Tahoma;
+}
+/* More info */
+.intro {
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+}
+.column {
+	width: 50%;
+	text-align: center;
+	padding-top: 30px;
+	float: left;
+}
+.intro .column h3 {
+	color: #FFFFFF;
+	text-align: center;
+}
+.intro .column p {
+	color: #FFFFFF;
+}
+.cards {
+    width: 39%;
+    max-width: 450px;
+    max-height: 200px;
+    opacity: 0.8;
+    border: thick solid #82BBE6;
+    height: auto;
+}
+.intro .column p {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    line-height: 25px;
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 80%;
+    margin-top: 4%;
+    font-family: Tahoma;
+}
+.button {
+	width: 200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+}
+.button:hover {
+	background-color: #6DC7D0;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #717070;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    border-top-width: 2px;
+    font-family: "Trajan Pro Bold";
+}
+footer {
+	background-color: #B3B3B3;
+	padding-top: 60px;
+	padding-bottom: 60PX;
+}
+.intro {
+    display: inline-block;
+    background-color: #82BBE6;
+}
+.profile {
+    width: 50%;
+}
+.gallery .thumbnail .tag {
+    color: #5D5E5D;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Trajan Pro Bold";
+}
+h4.logo {
+    font-family: "Trajan Pro Bold";
+    font-weight: bold;
+    height: auto;
+}
+a {
+    color: #82BBE6;
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.text_column {
+	width: 100%;
+	text-align: justify;
+	padding: 0;
+}
+.intro .column p {
+	width: 80%;
+	margin-left: 0px;
+}
+.text_column {
+	padding-left: 20px;
+}
+.thumbnail {
+	width: 100%;
+}
+.column {
+	width: 100%;
+	margin-top: 0px;
+}
+.hero_header {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+}
+
+/* Small Tablets */
+@media (min-width: 321px)and (max-width: 767px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.text_column {
+	width: 100%;
+	text-align: left;
+	padding: 0;
+}
+.thumbnail {
+	width: 100%;
+}
+.column {
+	width: 100%;
+	margin-top: 0px;
+}
+.thumbnail {
+	width: 100%;
+}
+.text_column {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 90%;
+}
+.column {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.profile {
+	width: 100%;
+}
+.intro .column p {
+	width: 90%;
+	text-align: center;
+	padding-left: 0px;
+}
+}
+
+/* Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+.text_column {
+	width: 100%;
+}
+.thumbnail {
+	width: 48%;
+}
+.text_column {
+	width: 90%;
+	margin: 0;
+	padding: 20px;
+}
+.intro .column p {
+	width: 80%;
+}
+	div.copyright{
+	font-family: arial,serif;
+    font-weight: bold;
+}
+
+	/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+	/* New Navbar Code*/
+}
+
+	</style>
+<link href="../css/studs_and_females.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo">ROBINWELL FRENCHIES</h4>
+    </a>
+    <nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+		<li><div class="dropdown">
+      		Litters
+    		<div class="dropdown-content">
+      		 <a href="pastpups.html">Past Pups</a>
+      		 <a href="newpups.html">Current Pups</a>
+    		</div>
+  		</div></li>
+			<li><a href="studs_and_females.html">Our Dogs</a></li>
+			<li><div class="dropdown">
+      		More
+    		<div class="dropdown-content">
+      		 <a href="faq.html">FAQ</a>
+			 <a href="customer_reviews.html">Customer Reviews</a>
+			 <a href="sitemap.html">Site Map</a>
+    		</div>
+  		</div></li>
+		</ul>
+	</nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="intro">
+    <div class="column"> <img src="../images/logo_transparent.png" alt="" class="profile"> </div>
+    <div class="column">
+      <p>These are the Studs and Females that we use to breed Frenchies. We have two studs Kilo and Kingston, and two females, Sevyn and London. Sevyn is our most recent females that had a litter including a total of six puppies, four females and two males. All puppies are currently looking for new homes and will be available on the <a href="news_pups.html">new puppies</a> page.</p>
+</div>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="../images/kilo_website.jpg" alt="" width="3024" class="cards"/></a>
+      <h4>Kilo</h4>
+      <p class="tag">Stud&nbsp;</p>
+      <p class="text_column">Kilo is a Blue Fawn Merle Pied, very great structure and bone He’s a Night-king son of Familia frenchies in Miami Florida. His DNA make up is AyAtkykyBBCocoddMmSsInIn</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="../images/kingston_website.jpg" alt="" width="3024" class="cards"/></a>
+      <h4>Kingston</h4>
+      <p class="tag">Stud</p>
+      <p class="text_column">Kingston is a Blue fawn, Isabella producer. He’s a Future son of Maricopa County Frenchies in Arizona. His DNA make up is AyAtkykyBbCocoddEmEm.</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="../images/london_website.jpg" alt="" width="3024" class="cards"/></a>
+      <h4>London</h4>
+      <p class="tag">Female</p>
+      <p class="text_column">London is a Solid Blue Pied. Her DNA makeup is aakykyBBCocoddEeSS.</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="../images/sevyn_website.jpg" alt="" width="1284" class="cards"/></a>
+      <h4>Sevyn</h4>
+      <p class="tag">Female</p>
+      <p class="text_column">Sevyn is a Standard Brindle Carrying Cream. Her DNA make up is AyAyKbkyEe.</p>
+    </div>
+  </div>
+<!-- Footer Section -->
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2021 - <strong>Robbinwell Frenchies</strong></div>
+</div>
+<!-- Main Container Ends -->
+	</body>
+</html>
